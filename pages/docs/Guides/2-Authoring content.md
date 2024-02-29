@@ -28,7 +28,7 @@ Cecil automatically use the page file name as title, but you can also define tit
 
 You can structure content using a heading. Headings in Markdown are indicated by a number of `#` at the start of the line.
 
-```markdown
+```yaml
 ---
 title: Page title
 description: Page short description.
