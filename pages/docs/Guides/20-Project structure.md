@@ -6,7 +6,7 @@ Statidocs projects follow the same file and directory structure as a Cecil proje
 
 ## Files and directories
 
-- `cecil.yml` — The cecil configuration file, includes the Statidocs configuration.
-- `pages/docs/` — Content files. Statidocs turns each .md file in this directory into a page on your site.
+- `cecil.yml` — The Cecil configuration file, includes the Statidocs configuration.
+- `pages/docs/` — Pages files. Statidocs turns each .md file in this directory into a page on your site.
 - `translations/` (optional) — Translation data to support internationalization.
-- `assets/` — Assets (styles, images, favicon, PDFs, etc.) that will not be processed by Cecil.
+- `assets/` — Assets (styles, images, favicon, PDFs, etc.) that will be processed by Cecil.

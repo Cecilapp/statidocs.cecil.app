@@ -1,5 +1,5 @@
 # Configuration reference
 
-:::tips
+:::info
 Cecil documentation: <https://cecil.app/documentation/configuration/>
 :::
