@@ -164,3 +164,69 @@ caution
 Note here.
 :::
 ```
+
+## Diagrams and charts
+
+Diagramming and charting with [Mermaid](https://mermaid.js.org).
+
+### Sequence diagram
+
+<pre>
+```mermaid
+sequenceDiagram
+  participant Alice
+  participant Bob
+  Alice->>John: Hello John, how are you?
+  loop HealthCheck
+    John->>John: Fight against hypochondria
+  end
+  Note right of John: Rational thoughts <br/>prevail!
+  John-->>Alice: Great!
+  John->>Bob: How about you?
+  Bob-->>John: Jolly good!
+```
+</pre>
+
+```mermaid
+sequenceDiagram
+  participant Alice
+  participant Bob
+  Alice->>John: Hello John, how are you?
+  loop HealthCheck
+    John->>John: Fight against hypochondria
+  end
+  Note right of John: Rational thoughts <br/>prevail!
+  John-->>Alice: Great!
+  John->>Bob: How about you?
+  Bob-->>John: Jolly good!
+```
+
+### Git graph
+
+<pre>
+```mermaid
+gitGraph
+  commit
+  commit
+  branch develop
+  commit
+  commit
+  commit
+  checkout main
+  commit
+  commit
+```
+</pre>
+
+```mermaid
+gitGraph
+  commit
+  commit
+  branch develop
+  commit
+  commit
+  commit
+  checkout main
+  commit
+  commit
+```
