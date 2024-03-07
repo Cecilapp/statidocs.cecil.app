@@ -38,7 +38,8 @@ sidebar: # docs groups in /pages/docs/
   - Reference
 footer: Copyright © %author%
 github:
-  repo: https://github.com/Cecilapp/statidocs
+  url: https://github.com/Cecilapp/statidocs
+  repo: https://github.com/Cecilapp/statidocs.cecil.app
   branch: main
 docsearch:
   enabled: true
