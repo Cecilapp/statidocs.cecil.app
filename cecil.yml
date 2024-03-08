@@ -1,7 +1,7 @@
 # Statidocs default config
 title: Statidocs
 baseline: An effective documentation
-baseurl: /
+baseurl: https://statidocs.cecil.app/
 description: Create and manage an effective documentation.
 author:
   name: Arnaud Ligny
