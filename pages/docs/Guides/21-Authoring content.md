@@ -54,7 +54,7 @@ Images use Cecil’s built-in optimized asset support.
 Cecil search images in `assets/` and `static/` folders, but relative path is also supported:
 
 ```markdown
-![Cecil favicon](../assets/favicon.png "Cecil favicon")
+![Cecil favicon](../../../assets/favicon.png "Cecil favicon")
 ```
 
 ## List
@@ -72,6 +72,22 @@ Cecil search images in `assets/` and `static/` folders, but relative path is als
   * Level 2
     * Level 3
     * Level 3
+
+```markdown
+* Unordered list
+* Unordered list
+* Unordered list
+
+1. Ordered list
+2. Ordered list
+3. Ordered list
+
+* Level 1
+  * Level 2
+  * Level 2
+    * Level 3
+    * Level 3
+```
 
 ## Blockquote
 
@@ -115,6 +131,10 @@ Builder::create($config)->build();
 
 ---
 
+```markdown
+---
+```
+
 ## Definition list
 
 First Term
@@ -124,6 +144,15 @@ Second Term
 : This is one definition of the second term.
 : This is another definition of the second term.
 
+```markdown
+First Term
+: This is the definition of the first term.
+
+Second Term
+: This is one definition of the second term.
+: This is another definition of the second term.
+```
+
 ## Table
 
 | Head 1       | Head 2            | Head 3 |
@@ -132,6 +161,15 @@ Second Term
 | out of stock | good and plenty   | nice   |
 | ok           | good `oreos`      | hmm    |
 | ok           | good `zoute` drop | yumm   |
+
+```markdown
+| Head 1       | Head 2            | Head 3 |
+|:-------------|:------------------|:-------|
+| ok           | good swedish fish | nice   |
+| out of stock | good and plenty   | nice   |
+| ok           | good `oreos`      | hmm    |
+| ok           | good `zoute` drop | yumm   |
+```
 
 ## Notes
 
@@ -171,6 +209,20 @@ Diagramming and charting with [Mermaid](https://mermaid.js.org).
 
 ### Sequence diagram
 
+```mermaid
+sequenceDiagram
+  participant Alice
+  participant Bob
+  Alice->>John: Hello John, how are you?
+  loop HealthCheck
+    John->>John: Fight against hypochondria
+  end
+  Note right of John: Rational thoughts <br/>prevail!
+  John-->>Alice: Great!
+  John->>Bob: How about you?
+  Bob-->>John: Jolly good!
+```
+
 <pre>
 ```mermaid
 sequenceDiagram
@@ -186,23 +238,22 @@ sequenceDiagram
   Bob-->>John: Jolly good!
 ```
 </pre>
-
-```mermaid
-sequenceDiagram
-  participant Alice
-  participant Bob
-  Alice->>John: Hello John, how are you?
-  loop HealthCheck
-    John->>John: Fight against hypochondria
-  end
-  Note right of John: Rational thoughts <br/>prevail!
-  John-->>Alice: Great!
-  John->>Bob: How about you?
-  Bob-->>John: Jolly good!
-```
 
 ### Git graph
 
+```mermaid
+gitGraph
+  commit
+  commit
+  branch develop
+  commit
+  commit
+  commit
+  checkout main
+  commit
+  commit
+```
+
 <pre>
 ```mermaid
 gitGraph
@@ -217,16 +268,3 @@ gitGraph
   commit
 ```
 </pre>
-
-```mermaid
-gitGraph
-  commit
-  commit
-  branch develop
-  commit
-  commit
-  commit
-  checkout main
-  commit
-  commit
-```
