@@ -23,12 +23,12 @@ languages:
         navigation:
           - id: docs
             name: Docs
-            url: /docs/introduction/getting-started
+            url: /docs/introduction/getting-started/
 menus:
   navigation:
     - id: docs
       name: Docs
-      url: /docs/introduction/getting-started # set the default page
+      url: /docs/introduction/getting-started/ # set the default page
     - id: about
       name: About
       url: /about

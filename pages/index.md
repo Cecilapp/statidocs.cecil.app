@@ -5,7 +5,7 @@ blocks:
     description: |
       Write pages in [Markdown](page:docs/guides/authoring-content), use [Twig templates](https://twig.symfony.com) and enjoy the power of [Cecil](https://cecil.app).
   - name: cta
-    button: docs/introduction/getting-started
+    button: docs/introduction/getting-started/
     #link: https://github.com/cecilapp/statidocs
   - name: features
     features:
