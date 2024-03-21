@@ -2,8 +2,8 @@ backend:
   name: git-gateway
   branch: main
 publish_mode: simple # editorial_workflow
-media_folder: assets/images
-public_folder: /images
+media_folder: assets
+public_folder: /
 site_url: https://statidocs.cecil.app
 locale: en
 
@@ -11,9 +11,10 @@ collections:
   - name: docs
     label: Docs
     folder: pages/docs
+    identifier_field: title
     path: '{{dirname}}/{{slug}}'
     create: true
-    summary: '{{dirname}} / {{title}}'
+    summary: '{{dirname}} > {{title}}'
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "string" }
