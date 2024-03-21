@@ -1,6 +1,5 @@
 backend:
-  name: github
-  repo: Cecilapp/statidocs.cecil.app
+  name: git-gateway
   branch: main
 publish_mode: simple # editorial_workflow
 media_folder: assets/images
