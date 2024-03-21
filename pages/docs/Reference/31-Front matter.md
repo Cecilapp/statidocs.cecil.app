@@ -1,3 +1,6 @@
+---
+title: Front matter reference
+---
 # Front matter reference
 
 :::info

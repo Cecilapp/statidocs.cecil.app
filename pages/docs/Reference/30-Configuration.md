@@ -1,3 +1,6 @@
+---
+title: Configuration reference
+---
 # Configuration reference
 
 :::info

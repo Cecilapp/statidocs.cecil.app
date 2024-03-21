@@ -1,3 +1,6 @@
+---
+title: Project structure
+---
 # Project structure
 
 This guide will show you how a Statidocs project is organized and what the different files in your project do.

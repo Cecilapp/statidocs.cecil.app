@@ -1,3 +1,6 @@
+---
+title: Site Search
+---
 # Site Search
 
 Statidocs has support for [Algolia DocSearch](https://docsearch.algolia.com).
