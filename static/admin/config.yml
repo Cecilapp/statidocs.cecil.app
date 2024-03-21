@@ -1,0 +1,20 @@
+backend:
+  name: github
+  repo: Cecilapp/statidocs.cecil.app
+  branch: main
+publish_mode: simple # editorial_workflow
+media_folder: assets/images
+public_folder: /images
+site_url: https://statidocs.cecil.app/
+locale: en
+
+collections:
+  - name: docs
+    label: Docs
+    folder: pages/docs
+    create: true
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Body", name: "body", widget: "markdown" }
