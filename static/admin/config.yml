@@ -4,7 +4,7 @@ backend:
 publish_mode: simple # editorial_workflow
 media_folder: assets/images
 public_folder: /images
-site_url: https://statidocs.cecil.app/
+site_url: https://statidocs.cecil.app
 locale: en
 
 collections:
