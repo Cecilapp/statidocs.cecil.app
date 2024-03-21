@@ -8,9 +8,10 @@ site_url: https://statidocs.cecil.app/
 locale: en
 
 collections:
-  - name: docs
-    label: Docs
+  - name: docs-guides
+    label: Guides
     folder: pages/docs
+    path: 'Guides/{{slug}}'
     create: true
     fields:
       - { label: "Title", name: "title", widget: "string" }
