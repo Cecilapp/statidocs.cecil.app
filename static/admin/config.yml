@@ -13,6 +13,7 @@ collections:
     folder: pages/docs
     path: '{{dirname}}/{{slug}}'
     create: true
+    summary: '{{dirname}} / {{title}}'
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "string" }
