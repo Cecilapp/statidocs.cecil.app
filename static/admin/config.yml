@@ -1,7 +1,7 @@
 backend:
   name: git-gateway
   branch: main
-publish_mode: simple # editorial_workflow
+publish_mode: simple # or editorial_workflow
 media_folder: assets
 public_folder: /
 #site_url: https://statidocs.cecil.app
@@ -18,10 +18,10 @@ collections:
     create: true
     summary: '{{group}} > {{title}}'
     fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Description", name: "description", widget: "string" }
-      - { label: "Group", name: "group", widget: "string" }
-      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: Title, name: title, widget: string }
+      - { label: Description, name: description, widget: string }
+      - { label: Group, name: group, widget: string }
+      - { label: Body, name: body, widget: markdown }
   - name: pages
     label: Pages
     files:
@@ -29,11 +29,39 @@ collections:
         name: index
         file: pages/index.md
         fields:
-          - { label: "Body", name: "body", widget: "markdown" }
+          - { label: Body, name: body, widget: markdown }
+          - label: Home blocks
+            name: blocks
+            widget: list
+            types:
+              - label: Hero
+                name: hero
+                widget: object
+                fields:
+                  - { label: Baseline, name: baseline, widget: string, default: 'Baseline' }
+                  - { label: Description, name: description, widget: text, default: 'Description' }
+              - label: CTA
+                name: cta
+                widget: object
+                fields:
+                  - label: Button,
+                    name: button,
+                    widget: relation,
+                    collection: docs
+                    search_fields: ['title']
+                    value_field: path
+                    display_fields: ['title']
+                  - { label: Link, name: link, widget: string }
+              - label: Features
+                name: features
+                widget: object
+                fields:
+                  - { label: Title, name: title, widget: string, default: 'Title' }
+                  - { label: Description, name: description, widget: markdown, default: 'Description' }
       - label: About
         name: about
         file: pages/about.md
         fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Menu", name: "menu", widget: "string" }
-          - { label: "Body", name: "body", widget: "markdown" }
+          - { label: Title, name: title, widget: string }
+          - { label: Menu, name: menu, widget: string }
+          - { label: Body, name: body, widget: markdown }
