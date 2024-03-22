@@ -47,13 +47,7 @@ collections:
                 widget: object
                 summary: '{{fields.baseline}}'
                 fields:
-                  - label: Button
-                    name: button
-                    widget: relation
-                    collection: docs
-                    search_fields: ['title']
-                    value_field: '{{slug}}'
-                    display_fields: ['title']
+                  - { label: Button, name: button, widget: string }
                   #- { label: Link, name: link, widget: string }
               - label: Features
                 name: features
