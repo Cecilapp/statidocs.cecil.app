@@ -41,7 +41,7 @@ collections:
                 summary: '{{fields.baseline}}'
                 fields:
                   - { label: Baseline, name: baseline, widget: string, default: 'Baseline' }
-                  - { label: Description, name: description, widget: text, default: 'Description' }
+                  - { label: Description, name: description, widget: markdown, default: 'Description' }
               - label: CTA
                 name: cta
                 widget: object
