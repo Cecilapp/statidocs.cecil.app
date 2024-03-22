@@ -56,7 +56,7 @@ collections:
                   #- { label: Link, name: link, widget: string }
               - label: Features
                 name: features
-                widget: list
+                widget: object
                 summary: '{{fields.title}}'
                 fields:
                   - { label: Title, name: title, widget: string }
