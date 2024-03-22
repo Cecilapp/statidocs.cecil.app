@@ -29,7 +29,6 @@ collections:
         name: index
         file: pages/index.md
         fields:
-          - { label: Body, name: body, widget: markdown }
           - label: Home blocks
             name: blocks
             widget: list
@@ -54,14 +53,15 @@ collections:
                     search_fields: ['title']
                     value_field: '{{slug}}'
                     display_fields: ['title']
-                  - { label: Link, name: link, widget: string }
+                  #- { label: Link, name: link, widget: string }
               - label: Features
                 name: features
                 widget: list
                 summary: '{{fields.title}}'
                 fields:
-                  - { label: Title, name: title, widget: string, default: 'Title' }
-                  - { label: Description, name: description, widget: markdown, default: 'Description' }
+                  - { label: Title, name: title, widget: string }
+                  - { label: Description, name: description, widget: markdown }
+          - { label: Body, name: body, widget: markdown }
       - label: About
         name: about
         file: pages/about.md
