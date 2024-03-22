@@ -16,8 +16,8 @@ collections:
     identifier_field: title
     #path: '{{dirname}}/{{slug}}'
     nested:
-      depth: 2
-      summary: '{{title}}'
+      depth: 100
+      summary: '{{dirname}} > {{title}}'
     meta: { path: { widget: string, label: 'Path', index_file: 'index' } }
     create: true
     summary: '{{dirname}} > {{title}}'
