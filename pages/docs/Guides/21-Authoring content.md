@@ -1,5 +1,6 @@
 ---
 title: Authoring content in Markdown
+group: Guides
 ---
 # Authoring content in Markdown
 
