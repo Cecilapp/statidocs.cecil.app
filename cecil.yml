@@ -36,6 +36,7 @@ sidebar: # docs groups in /pages/docs/
   - Introduction
   - Guides
   - Reference
+  - Test
 footer: Copyright © %author%
 github:
   url: https://github.com/Cecilapp/statidocs
