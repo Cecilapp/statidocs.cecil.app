@@ -58,14 +58,10 @@ collections:
               - label: Features
                 name: features
                 widget: list
-                summary: '{{fields.feature.title}}'
+                summary: '{{fields.title}}'
                 fields:
-                  - label: Feature
-                    name: feature
-                    widget: object
-                    fields:
-                      - { label: Title, name: title, widget: string, default: 'Title' }
-                      - { label: Description, name: description, widget: markdown, default: 'Description' }
+                  - { label: Title, name: title, widget: string, default: 'Title' }
+                  - { label: Description, name: description, widget: markdown, default: 'Description' }
       - label: About
         name: about
         file: pages/about.md
