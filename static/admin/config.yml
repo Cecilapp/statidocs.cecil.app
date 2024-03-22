@@ -14,11 +14,7 @@ collections:
     label_singular: Docs page
     folder: pages/docs
     identifier_field: title
-    #path: '{{dirname}}/{{slug}}'
-    nested:
-      depth: 100
-      summary: '{{dirname}} > {{title}}'
-    meta: { path: { widget: string, label: 'Path', index_file: 'index' } }
+    path: '{{dirname}}/{{slug}}'
     create: true
     summary: '{{dirname}} > {{title}}'
     fields:
