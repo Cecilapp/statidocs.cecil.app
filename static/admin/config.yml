@@ -59,7 +59,8 @@ collections:
                 widget: list
                 typekey: title
                 types:
-                  - widget: object
+                  - name: feature
+                    widget: object
                     fields:
                       - { label: Title, name: title, widget: string }
                       - { label: Description, name: description, widget: markdown }
