@@ -24,7 +24,7 @@ collections:
     create: true
     i18n: true
     summary: '{{dirname}} > {{title}}'
-    preview_path: docs/{{slug}}
+    preview_path: docs/{{dirname}}/{{filename}}
     fields:
       - { label: "Title", name: "title", widget: "string", i18n: true }
       - { label: "Description", name: "description", widget: "string" }
