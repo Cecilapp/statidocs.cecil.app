@@ -1,6 +1,8 @@
 ---
 title: Getting started
-description: Learn how to start building your documentation website with Statidocs, powered by Cecil.
+description: Learn how to start building your documentation website with
+  Statidocs, powered by Cecil.
+group: Introduction
 ---
 # Getting started
 
@@ -74,7 +76,7 @@ To know more, checks the [Cecil front matter documentation](https://cecil.app/do
 Statidocs is still in development, there will be frequent updates and improvements. Be sure to update Statidocs regularly
 :::
 
-Statidocs is built on top of the Cecil theme [_docs_](https://github.com/Cecilapp/theme-docs). You can update it and other Cecil themes by running the following command in your terminal:
+Statidocs is built on top of the Cecil theme *[docs](https://github.com/Cecilapp/theme-docs)*. You can update it and other Cecil themes by running the following command in your terminal:
 
 ```bash
 composer update
