@@ -7,7 +7,7 @@ blocks:
       templates](https://twig.symfony.com) and enjoy the power of
       [Cecil](https://cecil.app).
   - name: cta
-    button: Introduction/10-Getting started
+    button: Guides/23-Internationalization
   - name: features
     features:
       - title: Files only
