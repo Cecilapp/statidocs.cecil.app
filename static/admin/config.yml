@@ -6,6 +6,9 @@ media_folder: assets
 public_folder: /
 site_url: https://statidocs.cecil.app
 
+editor:
+  preview: false
+
 #i18n:
 #  structure: multiple_files
 #  locales: [en, fr]
