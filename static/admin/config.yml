@@ -38,19 +38,21 @@ collections:
               - label: Hero
                 name: hero
                 widget: object
+                summary: '{{fields.baseline}}'
                 fields:
                   - { label: Baseline, name: baseline, widget: string, default: 'Baseline' }
                   - { label: Description, name: description, widget: text, default: 'Description' }
               - label: CTA
                 name: cta
                 widget: object
+                summary: '{{fields.baseline}}'
                 fields:
                   - label: Button,
                     name: button,
                     widget: relation,
                     collection: docs
                     search_fields: ['title']
-                    value_field: path
+                    value_field: {{slug}}
                     display_fields: ['title']
                   - { label: Link, name: link, widget: string }
               - label: Features
