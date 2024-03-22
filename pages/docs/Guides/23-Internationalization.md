@@ -1,5 +1,6 @@
 ---
 title: Internationalization (i18n)
+group: Guides
 ---
 # Internationalization (i18n)
 
