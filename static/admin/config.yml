@@ -7,14 +7,11 @@ public_folder: /
 #site_url: https://statidocs.cecil.app
 editor:
   preview: false
-
 collections:
   - name: docs
     label: Docs
     label_singular: Docs page
     folder: pages/docs
-    identifier_field: title
-    slug: '{{slug}}'
     path: '{{group}}/{{slug}}'
     create: true
     summary: '{{group}} > {{title}}'
@@ -30,7 +27,7 @@ collections:
         name: index
         file: pages/index.md
         fields:
-          - label: Home blocks
+          - label: Blocks
             name: blocks
             widget: list
             typeKey: name
@@ -38,14 +35,14 @@ collections:
               - label: Hero
                 name: hero
                 widget: object
-                summary: '{{fields.baseline}}'
+                summary: '{{baseline}}'
                 fields:
                   - { label: Baseline, name: baseline, widget: string, default: 'Baseline' }
                   - { label: Description, name: description, widget: markdown, default: 'Description' }
               - label: CTA
                 name: cta
                 widget: object
-                summary: '{{fields.baseline}}'
+                summary: '{{button}}'
                 fields:
                   - { label: Button, name: button, widget: string }
                   #- { label: Link, name: link, widget: string }
