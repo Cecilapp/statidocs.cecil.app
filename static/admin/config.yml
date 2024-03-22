@@ -21,7 +21,7 @@ collections:
     create: true
     summary: '{{dirname}} > {{title}}'
     fields:
-      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Title", name: "title", widget: "string", i18n: true }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
   - name: pages
@@ -31,7 +31,7 @@ collections:
         name: about
         file: pages/about.md
         fields:
-          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Title", name: "title", widget: "string", i18n: true }
           - { label: "Menu", name: "menu", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" }
       - label: Home page
