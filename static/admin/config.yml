@@ -56,12 +56,13 @@ collections:
                   #- { label: Link, name: link, widget: string }
               - label: Features
                 name: features
-                widget: list
-                label_singular: Feature
-                identifier_field: title
                 fields:
-                  - { label: Title, name: title, widget: string }
-                  - { label: Description, name: description, widget: markdown }
+                  - label: Features
+                    name: features
+                    widget: list
+                    fields:
+                      - { label: Title, name: title, widget: string }
+                      - { label: Description, name: description, widget: markdown }
           - { label: Body, name: body, widget: markdown }
       - label: About
         name: about
