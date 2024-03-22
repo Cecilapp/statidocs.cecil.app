@@ -1,5 +1,6 @@
 ---
 title: Configuration reference
+group: Reference
 ---
 # Configuration reference
 
