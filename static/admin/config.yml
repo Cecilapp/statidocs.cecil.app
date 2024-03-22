@@ -4,15 +4,9 @@ backend:
 publish_mode: simple # editorial_workflow
 media_folder: assets
 public_folder: /
-site_url: https://statidocs.cecil.app
-
+#site_url: https://statidocs.cecil.app
 editor:
   preview: false
-
-#i18n:
-#  structure: multiple_files
-#  locales: [en, fr]
-#  default_locale: en
 
 collections:
   - name: docs
@@ -22,11 +16,9 @@ collections:
     identifier_field: title
     path: '{{dirname}}/{{slug}}'
     create: true
-    i18n: true
     summary: '{{dirname}} > {{title}}'
-    preview_path: docs/{{dirname}}/{{filename}}
     fields:
-      - { label: "Title", name: "title", widget: "string", i18n: true }
+      - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
   - name: pages
@@ -40,9 +32,7 @@ collections:
       - label: About
         name: about
         file: pages/about.md
-        i18n: true
-        preview_path: about
         fields:
-          - { label: "Title", name: "title", widget: "string", i18n: true }
+          - { label: "Title", name: "title", widget: "string" }
           - { label: "Menu", name: "menu", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" }
