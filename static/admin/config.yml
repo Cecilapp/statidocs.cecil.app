@@ -5,11 +5,16 @@ publish_mode: simple # editorial_workflow
 media_folder: assets
 public_folder: /
 site_url: https://statidocs.cecil.app
-locale: en
+
+i18n:
+  structure: multiple_files
+  locales: [en, fr]
+  default_locale: en
 
 collections:
   - name: docs
     label: Docs
+    label_singular: Doc page
     folder: pages/docs
     identifier_field: title
     path: '{{dirname}}/{{slug}}'
@@ -18,5 +23,19 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Body", name: "body", widget: "markdown" }
+  - name: pages
+    label: Pages
+    files:
+      - label: About
+        name: about
+        file: pages/about.md
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Menu", name: "menu", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+      - label: Home page
+        name: index
+        file: pages/index.md
+        fields:
+          - { label: "Body", name: "body", widget: "markdown" }
