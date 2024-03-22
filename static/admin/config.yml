@@ -33,6 +33,7 @@ collections:
           - label: Home blocks
             name: blocks
             widget: list
+            typeKey: name
             types:
               - label: Hero
                 name: hero
