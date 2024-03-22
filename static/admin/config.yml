@@ -14,12 +14,13 @@ collections:
     label_singular: Docs page
     folder: pages/docs
     identifier_field: title
-    path: '{{dirname}}/{{slug}}'
+    path: '{{fields.group}}/{{slug}}'
     create: true
     summary: '{{dirname}} > {{title}}'
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "string" }
+      - { label: "Group", name: "group", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
   - name: pages
     label: Pages
