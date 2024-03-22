@@ -57,6 +57,8 @@ collections:
               - label: Features
                 name: features
                 widget: list
+                label_singular: Feature
+                identifier_field: title
                 fields:
                   - { label: Title, name: title, widget: string }
                   - { label: Description, name: description, widget: markdown }
