@@ -1,5 +1,6 @@
 ---
 title: Site Search
+group: Guides
 ---
 # Site Search
 
