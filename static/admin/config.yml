@@ -32,16 +32,17 @@ collections:
   - name: pages
     label: Pages
     files:
-      - label: About
-        name: about
-        file: pages/about.md
-        i18n: true
-        fields:
-          - { label: "Title", name: "title", widget: "string", i18n: true }
-          - { label: "Menu", name: "menu", widget: "string" }
-          - { label: "Body", name: "body", widget: "markdown" }
       - label: Home page
         name: index
         file: pages/index.md
         fields:
+          - { label: "Body", name: "body", widget: "markdown" }
+      - label: About
+        name: about
+        file: pages/about.md
+        i18n: true
+        preview_path: about
+        fields:
+          - { label: "Title", name: "title", widget: "string", i18n: true }
+          - { label: "Menu", name: "menu", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" }
