@@ -19,6 +19,7 @@ collections:
     identifier_field: title
     path: '{{dirname}}/{{slug}}'
     create: true
+    i18n: true
     summary: '{{dirname}} > {{title}}'
     fields:
       - { label: "Title", name: "title", widget: "string", i18n: true }
@@ -30,6 +31,7 @@ collections:
       - label: About
         name: about
         file: pages/about.md
+        i18n: true
         fields:
           - { label: "Title", name: "title", widget: "string", i18n: true }
           - { label: "Menu", name: "menu", widget: "string" }
