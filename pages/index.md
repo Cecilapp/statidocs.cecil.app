@@ -7,7 +7,7 @@ blocks:
       templates](https://twig.symfony.com) and enjoy the power of
       [Cecil](https://cecil.app).
   - name: cta
-    button: Guides/23-Internationalization
+    button: docs/introduction/getting-started/
   - name: features
     features:
       - title: Files only
@@ -19,8 +19,6 @@ blocks:
           translation.
       - title: Fast & Secure
         description: "No database, no server, no dependency: performance and security."
-      - title: Test
-        description: Test
 ---
 :::important
 Statidocs is still in development. If something that’s not working, please [open an issue on GitHub](https://github.com/Cecilapp/statidocs/issues/new/choose).
