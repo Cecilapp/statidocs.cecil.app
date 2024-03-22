@@ -1,5 +1,6 @@
 ---
 title: Project structure
+group: Guides
 ---
 # Project structure
 
