@@ -52,15 +52,20 @@ collections:
                     widget: relation,
                     collection: docs
                     search_fields: ['title']
-                    value_field: {{slug}}
+                    value_field: '{{slug}}'
                     display_fields: ['title']
                   - { label: Link, name: link, widget: string }
               - label: Features
                 name: features
-                widget: object
+                widget: list
+                summary: '{{fields.feature.title}}'
                 fields:
-                  - { label: Title, name: title, widget: string, default: 'Title' }
-                  - { label: Description, name: description, widget: markdown, default: 'Description' }
+                  - label: Feature
+                    name: feature
+                    widget: object
+                    fields:
+                      - { label: Title, name: title, widget: string, default: 'Title' }
+                      - { label: Description, name: description, widget: markdown, default: 'Description' }
       - label: About
         name: about
         file: pages/about.md
