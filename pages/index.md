@@ -19,6 +19,8 @@ blocks:
           translation.
       - title: Fast & Secure
         description: "No database, no server, no dependency: performance and security."
+      - title: Test
+        description: Test
     title: test
     description: Test.
 ---
