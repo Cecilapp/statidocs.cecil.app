@@ -57,13 +57,9 @@ collections:
               - label: Features
                 name: features
                 widget: list
-                typekey: title
-                types:
-                  - name: feature
-                    widget: object
-                    fields:
-                      - { label: Title, name: title, widget: string }
-                      - { label: Description, name: description, widget: markdown }
+                fields:
+                  - { label: Title, name: title, widget: string }
+                  - { label: Description, name: description, widget: markdown }
           - { label: Body, name: body, widget: markdown }
       - label: About
         name: about
