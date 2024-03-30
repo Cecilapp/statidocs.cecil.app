@@ -55,3 +55,9 @@ theme:
   - pwa
 serviceworker:
   enabled: true # you should disable it locally
+  update:
+    snackbar:
+      enabled: true # show Snackbar message
+  offline:
+    snackbar:
+      enabled: true # show Snackbar message
