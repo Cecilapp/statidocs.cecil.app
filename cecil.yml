@@ -24,6 +24,9 @@ languages:
           - id: docs
             name: Docs
             url: /docs/introduction/getting-started/
+          - id: about
+            name: À propos
+            url: /about
 menus:
   navigation:
     - id: docs
