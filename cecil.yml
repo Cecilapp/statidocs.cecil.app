@@ -1,8 +1,8 @@
 # Statidocs default config
 title: Statidocs
-baseline: An effective documentation
+baseline: Build a documentation website from Markdown
 baseurl: https://statidocs.cecil.app/
-description: Create and manage an effective documentation.
+description: Build a documentation website from Markdown.
 author:
   name: Arnaud Ligny
   url: https://arnaudligny.fr
@@ -17,8 +17,8 @@ languages:
     name: Français
     locale: fr
     config:
-      baseline: Une documentation efficace
-      description: Créer et gérer une documentation efficace.
+      baseline: Créer un site Web de documentation à partir de Markdown
+      description: Créer un site Web de documentation à partir de Markdown.
       menus:
         navigation:
           - id: docs
