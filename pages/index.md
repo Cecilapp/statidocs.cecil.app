@@ -1,11 +1,11 @@
 ---
 blocks:
   - name: hero
-    baseline: Build a documentation website quickly
+    baseline: Build a documentation website from Markdown
     description: >
-      Write pages in [Markdown](page:docs/guides/authoring-content), use [Twig
-      templates](https://twig.symfony.com) and enjoy the power of
-      [Cecil](https://cecil.app).
+      Write pages in [Markdown](page:docs/guides/authoring-content), customize templates with 
+      [Twig](https://twig.symfony.com) and [Tailwind CSS](https://tailwindcss.com), 
+      and enjoy the power of [Cecil](https://cecil.app) static site generator.
   - name: cta
     button: docs/introduction/getting-started/
   - name: features
