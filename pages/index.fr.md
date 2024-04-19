@@ -1,9 +1,11 @@
 ---
 blocks:
   - name: hero
-    baseline: Créez rapidement un site de documentation
+    baseline: Créer un site Web de documentation à partir de Markdown
     description: |
-      Rédigez des pages en [Markdown](page:docs/guides/authoring-content), utilisez des [templates Twig](https://twig.symfony.com) et profitez de la puissance de [Cecil](https://cecil.app).
+      Écrivez des pages dans [Markdown](page:docs/guides/authoring-content), 
+      personnalisez des modèles avec [Twig](https://twig.symfony.com) et [Tailwind CSS](https://tailwindcss.com), 
+      et profitez de la puissance du générateur de site statique Cecil.
   - name: cta
     button: docs/introduction/getting-started/
   - name: features
