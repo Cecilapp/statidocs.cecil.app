@@ -1,8 +1,8 @@
 # Statidocs default config
 title: Statidocs
-baseline: Build a documentation website from Markdown
+baseline: Build a documentation website quickly
 baseurl: https://statidocs.cecil.app/
-description: Build a documentation website from Markdown.
+description: Build a documentation website quickly.
 author:
   name: Arnaud Ligny
   url: https://arnaudligny.fr
@@ -17,8 +17,8 @@ languages:
     name: Français
     locale: fr
     config:
-      baseline: Créer un site Web de documentation à partir de Markdown
-      description: Créer un site Web de documentation à partir de Markdown.
+      baseline: Créer rapidement un site Web de documentation
+      description: Créer rapidement un site Web de documentation.
       menus:
         navigation:
           - id: docs

@@ -1,7 +1,7 @@
 ---
 blocks:
   - name: hero
-    baseline: Créer un site Web de documentation à partir de Markdown
+    baseline: Créer rapidement un site Web de documentation
     description: |
       Écrivez des pages dans [Markdown](page:docs/guides/authoring-content), 
       personnalisez des modèles avec [Twig](https://twig.symfony.com) et [Tailwind CSS](https://tailwindcss.com), 

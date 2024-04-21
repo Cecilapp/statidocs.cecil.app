@@ -1,7 +1,7 @@
 ---
 blocks:
   - name: hero
-    baseline: Build a documentation website from Markdown
+    baseline: Build a documentation website quickly
     description: >
       Write pages in [Markdown](page:docs/guides/authoring-content), customize templates with 
       [Twig](https://twig.symfony.com) and [Tailwind CSS](https://tailwindcss.com), 
