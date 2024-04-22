@@ -1,7 +1,9 @@
 ---
 title: Getting started
-description: Learn how to start building your documentation website with
-  Statidocs, powered by Cecil.
+description: Learn how to start building your documentation website with Statidocs, powered by Cecil.
+menus:
+  main:
+    - weight: 10
 group: Introduction
 ---
 # Getting started
