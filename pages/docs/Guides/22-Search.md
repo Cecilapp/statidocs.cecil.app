@@ -1,5 +1,6 @@
 ---
 title: Site Search
+description: Statidocs has support for Algolia DocSearch.
 group: Guides
 ---
 # Site Search
