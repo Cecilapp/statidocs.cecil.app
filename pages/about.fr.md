@@ -1,6 +1,8 @@
 ---
 title: À propos
-menu: main
+menu:
+  main:
+    weight: 999
 ---
 # À propos
 
