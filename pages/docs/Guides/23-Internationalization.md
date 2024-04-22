@@ -1,5 +1,6 @@
 ---
 title: Internationalization (i18n)
+description: Statidocs provides built-in support for multilingual sites.
 group: Guides
 ---
 # Internationalization (i18n)
