@@ -2,7 +2,7 @@
 title: Statidocs
 baseline: Build a documentation website quickly
 baseurl: https://statidocs.cecil.app/
-description: Write pages in Markdown, customize templates with Twig and Tailwind CSS, and enjoy the power of Cecil static site generator.
+description: Write your pages in Markdown, customize templates with Twig and Tailwind CSS, and enjoy the power of Cecil static site generator.
 author:
   name: Arnaud Ligny
   url: https://arnaudligny.fr
@@ -18,23 +18,15 @@ languages:
     locale: fr
     config:
       baseline: Créez rapidement un site Web de documentation
-      description: Écrivez des pages dans Markdown, personnalisez des modèles avec Twig et Tailwind CSS, et profitez de la puissance du générateur de site statique Cecil.
+      description: Rédigez vos pages en Markdown, personnalisez des templates avec Twig et Tailwind CSS, et profitez de la puissance du générateur de site statique Cecil.
       menus:
         main:
           - id: index
             enabled: false
-          - id: docs
-            name: Docs
-            url: /docs/introduction/getting-started/
-            weight: 10
 menus:
   main:
     - id: index
       enabled: false
-    - id: docs
-      name: Docs
-      url: /docs/introduction/getting-started/
-      weight: 10
 sidebar: # docs groups in /pages/docs/
   - Introduction
   - Guides
