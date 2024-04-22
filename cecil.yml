@@ -23,10 +23,18 @@ languages:
         main:
           - id: index
             enabled: false
+          - id: docs
+            name: Docs
+            url: /docs/introduction/getting-started/
+            weight: 10
 menus:
   main:
     - id: index
       enabled: false
+    - id: docs
+      name: Docs
+      url: /docs/introduction/getting-started/
+      weight: 10
 sidebar: # docs groups in /pages/docs/
   - Introduction
   - Guides
