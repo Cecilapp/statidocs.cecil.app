@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "cecil/theme-docs",
-            "version": "2.18.2",
+            "version": "2.18.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Cecilapp/theme-docs.git",
-                "reference": "ddc7b55c5c1a056c68d36a5e077b432194bc1c2b"
+                "reference": "74c0118f36439c8ebca4687ba54e67197d09f867"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Cecilapp/theme-docs/zipball/ddc7b55c5c1a056c68d36a5e077b432194bc1c2b",
-                "reference": "ddc7b55c5c1a056c68d36a5e077b432194bc1c2b",
+                "url": "https://api.github.com/repos/Cecilapp/theme-docs/zipball/74c0118f36439c8ebca4687ba54e67197d09f867",
+                "reference": "74c0118f36439c8ebca4687ba54e67197d09f867",
                 "shasum": ""
             },
             "require": {
@@ -42,7 +42,7 @@
             ],
             "support": {
                 "issues": "https://github.com/Cecilapp/theme-docs/issues",
-                "source": "https://github.com/Cecilapp/theme-docs/tree/2.18.2"
+                "source": "https://github.com/Cecilapp/theme-docs/tree/2.18.3"
             },
             "funding": [
                 {
@@ -54,7 +54,7 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2024-04-23T09:01:06+00:00"
+            "time": "2024-04-23T09:10:39+00:00"
         },
         {
             "name": "cecil/theme-installer",
