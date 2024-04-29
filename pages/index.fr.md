@@ -6,7 +6,9 @@ blocks:
       personnalisez les templates avec [Twig](https://twig.symfony.com) et [Tailwind CSS](https://tailwindcss.com), 
       et profitez de la puissance du générateur de site statique [Cecil](https://cecil.app).
   - name: cta
-    button: docs/introduction/getting-started/
+    links:
+      - url: https://github.com/cecilapp/statidocs
+        title: Voir sur GitHub
   - name: features
     features:
       - title: Fichiers uniquement
