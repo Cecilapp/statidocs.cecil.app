@@ -6,7 +6,9 @@ blocks:
       [Twig](https://twig.symfony.com) and [Tailwind CSS](https://tailwindcss.com), 
       and enjoy the power of [Cecil](https://cecil.app) static site generator.
   - name: cta
-    button: docs/introduction/getting-started/
+    links:
+      - url: https://github.com/cecilapp/statidocs
+        title: View on GitHub
   - name: features
     features:
       - title: Files only
