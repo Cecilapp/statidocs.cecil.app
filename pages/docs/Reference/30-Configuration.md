@@ -6,5 +6,5 @@ group: Reference
 # Configuration reference
 
 :::info
-Cecil documentation: <https://cecil.app/documentation/configuration/>
+[Cecil documentation](https://cecil.app/documentation/configuration/)
 :::
