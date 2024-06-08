@@ -36,11 +36,11 @@ Duplicate pages you want to translate by adding language code as suffix, for exa
 ```
 
 :::tips
-Cecil documentation: <https://cecil.app/documentation/content/#multilingual>
+[Cecil documentation](https://cecil.app/documentation/content/#multilingual)
 :::
 
 ## Translate templates
 
 :::tips
-Cecil documentation: <https://cecil.app/documentation/templates/#localization>
+[Cecil documentation](https://cecil.app/documentation/templates/#localization)
 :::
