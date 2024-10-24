@@ -7,7 +7,7 @@ blocks:
       et profitez de la puissance du générateur de site statique [Cecil](https://cecil.app).
   - name: cta
     links:
-      - url: https://github.com/cecilapp/statidocs
+      - url: https://github.com/Cecilapp/statidocs
         title: Voir sur GitHub
   - name: features
     features:
