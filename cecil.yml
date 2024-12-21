@@ -31,7 +31,7 @@ menus:
       enabled: false
     - id: docs
       weight: 0
-logo: favicon.png
+logo: logo.png
 sidebar: # docs groups in /pages/docs/
   - Introduction
   - Guides
