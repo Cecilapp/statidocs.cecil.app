@@ -53,11 +53,16 @@ docsearch:
 theme:
   - docs
   - pwa
+manifest:
+  shortcuts: true
 serviceworker:
-  enabled: true # you should disable it locally
+  enabled: true
   update:
     snackbar:
-      enabled: true # show Snackbar message
+      enabled: true
   offline:
     snackbar:
-      enabled: true # show Snackbar message
+      enabled: true
+metatags:
+  jsonld:
+    enabled: true
