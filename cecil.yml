@@ -53,6 +53,8 @@ docsearch:
 theme:
   - docs
   - pwa
+metatags:
+  jsonld: true
 manifest:
   background_color: '#1C4ED8'
   theme_color: '#1C4ED8'
@@ -67,11 +69,6 @@ manifest:
 serviceworker:
   enabled: true
   update:
-    snackbar:
-      enabled: true
+    snackbar: true
   offline:
-    snackbar:
-      enabled: true
-metatags:
-  jsonld:
-    enabled: true
+    snackbar: true
