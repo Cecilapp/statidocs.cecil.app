@@ -35,12 +35,12 @@ Duplicate pages you want to translate by adding language code as suffix, for exa
       └─ getting-started.fr.md
 ```
 
-:::tips
+:::tip
 [Cecil documentation](https://cecil.app/documentation/content/#multilingual)
 :::
 
 ## Translate templates
 
-:::tips
+:::tip
 [Cecil documentation](https://cecil.app/documentation/templates/#localization)
 :::
