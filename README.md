@@ -1,1 +1,3 @@
-statidocs.cecil.app
+# Statidocs website
+
+<statidocs.cecil.app>

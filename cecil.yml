@@ -32,10 +32,6 @@ menus:
     - id: docs
       weight: 0
 logo: logo.png
-sidebar: # docs groups in /pages/docs/
-  - Introduction
-  - Guides
-  - Reference
 footer: Copyright © %author%
 github:
   url: https://github.com/Cecilapp/statidocs
