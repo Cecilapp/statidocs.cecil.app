@@ -7,7 +7,7 @@ description: Apprenez à créer votre site de documentation avec Statidocs, prop
 Statidocs est un puissant démarreur de documentation, construit par le générateur de sites statiques [Cecil](https://cecil.app).
 
 :::important
-PHP 8.1+ est nécessaire.
+PHP 8.3+ est nécessaire.
 :::
 
 ## Créer un nouveau projet
