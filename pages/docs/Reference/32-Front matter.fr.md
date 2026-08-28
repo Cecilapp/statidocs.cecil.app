@@ -1,7 +1,6 @@
 ---
 title: Référence du front matter
-description: Référence du front matter
-group: Référence
+description: Référence du front matter.
 ---
 # Référence du front matter
 

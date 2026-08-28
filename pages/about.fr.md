@@ -1,5 +1,6 @@
 ---
 title: À propos
+description: À propos de Statidocs, un site de démarrage de documentation open source.
 menu:
   main:
     weight: 999

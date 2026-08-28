@@ -1,7 +1,6 @@
 ---
 title: Front matter reference
-description: Front matter reference
-group: Reference
+description: Front matter reference.
 ---
 # Front matter reference
 

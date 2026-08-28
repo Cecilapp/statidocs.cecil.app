@@ -1,7 +1,6 @@
 ---
 title: Internationalisation (i18n)
 description: Statidocs prend en charge nativement les sites multilingues.
-group: Guides
 ---
 # Internationalisation (i18n)
 

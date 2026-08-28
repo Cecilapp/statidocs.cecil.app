@@ -1,7 +1,6 @@
 ---
 title: Recherche sur le site
 description: Statidocs prend en charge Algolia DocSearch.
-group: Guides
 ---
 # Recherche sur le site
 

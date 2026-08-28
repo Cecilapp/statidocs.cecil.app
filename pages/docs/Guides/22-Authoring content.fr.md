@@ -1,7 +1,6 @@
 ---
-title: Rédiger du contenu en Markdown
+title: Rédiger du contenu
 description: Comment rédiger vos pages de contenu avec l’aide de Markdown.
-group: Guides
 ---
 # Rédiger du contenu en Markdown
 

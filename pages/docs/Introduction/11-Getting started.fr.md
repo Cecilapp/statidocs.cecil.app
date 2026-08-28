@@ -1,7 +1,6 @@
 ---
 title: Mise en route
 description: Apprenez à créer votre site de documentation avec Statidocs, propulsé par Cecil.
-group: Introduction
 ---
 # Mise en route
 

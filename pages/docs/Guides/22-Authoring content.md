@@ -1,7 +1,6 @@
 ---
-title: Authoring content in Markdown
+title: Authoring content
 description: How to wite your content page helped by Markdown.
-group: Guides
 ---
 # Authoring content in Markdown
 

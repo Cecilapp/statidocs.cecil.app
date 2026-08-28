@@ -1,7 +1,6 @@
 ---
 title: Structure du projet
 description: Ce guide vous montre comment est organisé un projet Statidocs et à quoi servent les différents fichiers de votre projet.
-group: Guides
 ---
 # Structure du projet
 

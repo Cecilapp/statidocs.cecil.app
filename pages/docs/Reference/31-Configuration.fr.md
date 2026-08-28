@@ -1,7 +1,6 @@
 ---
 title: Référence de la configuration
-description: Référence de la configuration
-group: Référence
+description: Référence de la configuration.
 ---
 # Référence de la configuration
 

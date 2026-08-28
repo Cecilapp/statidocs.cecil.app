@@ -1,5 +1,6 @@
 ---
 title: About
+description: About Statidocs, an open source documentation starter site built on top of Cecil and the Docs theme.
 menu:
   main:
     weight: 999
