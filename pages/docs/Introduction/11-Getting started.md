@@ -7,7 +7,7 @@ description: Learn how to start building your documentation website with Statido
 Statidocs is a powerful documentation starter, built by static site generator [Cecil](https://cecil.app).
 
 :::important
-PHP 8.1+ is required.
+PHP 8.3+ is required.
 :::
 
 ## Create a new project
