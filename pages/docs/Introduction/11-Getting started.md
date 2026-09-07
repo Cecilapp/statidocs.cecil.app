@@ -15,7 +15,7 @@ PHP 8.3+ is required.
 The easiest way to create a new Statidocs project is using [Composer](https://getcomposer.org):
 
 ```bash
-composer create-project cecil/statidocs my-project
+composer create-project cecil/statidocs --ask
 ```
 
 :::info
