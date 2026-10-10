@@ -43,15 +43,19 @@ The configuration of your site is defined in the `cecil.yml` file. Statidocs sup
 
 ## Search
 
-| Option                | Description                                          | Default |
-|-----------------------|------------------------------------------------------|---------|
-| `docsearch.enabled`   | Enable [Algolia DocSearch](page:docs/guides/search). | `false` |
-| `docsearch.appId`     | Algolia application ID.                              |         |
-| `docsearch.indexName` | Algolia index name.                                  |         |
-| `docsearch.apiKey`    | Algolia search API key.                              |         |
-| `docsearch.insights`  | Enable Algolia Insights.                             | `false` |
-| `docsearch.debug`     | Keep the search modal open (for debugging).          | `false` |
-| `flexsearch`          | Options of the FlexSearch component theme.           |         |
+Search options are provided by the [DocSearch](https://github.com/Cecilapp/theme-docsearch) and [FlexSearch](https://github.com/Cecilapp/theme-flexsearch) component themes, which must be installed and added to the `theme` section. See [Site Search](page:docs/guides/search).
+
+| Option                 | Description                                                  | Default |
+|------------------------|--------------------------------------------------------------|---------|
+| `docsearch.enabled`    | Display the DocSearch search box.                            | `true`  |
+| `docsearch.appId`      | Algolia application ID.                                      |         |
+| `docsearch.indexName`  | Algolia index name.                                          |         |
+| `docsearch.apiKey`     | Algolia search-only API key.                                 |         |
+| `docsearch.language`   | Filter the results on the current language.                  | `true`  |
+| `docsearch.insights`   | Enable Algolia Insights.                                     | `false` |
+| `docsearch.debug`      | Keep the search modal open (for debugging).                  | `false` |
+| `flexsearch.enabled`   | Display the FlexSearch search box.                           | `true`  |
+| `flexsearch.sections`  | Indexed sections, in the order of the result groups.         | all     |
 
 ## Example
 
@@ -82,5 +86,6 @@ docsearch:
   apiKey: <YOUR_SEARCH_API_KEY>
 theme:
   - docs
+  - docsearch
   - pwa
 ```

@@ -43,15 +43,19 @@ La configuration de votre site est définie dans le fichier `cecil.yml`. Statido
 
 ## Recherche
 
-| Option                | Description                                                 | Défaut  |
-|-----------------------|-------------------------------------------------------------|---------|
-| `docsearch.enabled`   | Active [Algolia DocSearch](page:fr/docs/guides/search).        | `false` |
-| `docsearch.appId`     | Identifiant de l’application Algolia.                       |         |
-| `docsearch.indexName` | Nom de l’index Algolia.                                     |         |
-| `docsearch.apiKey`    | Clé d’API de recherche Algolia.                             |         |
-| `docsearch.insights`  | Active Algolia Insights.                                    | `false` |
-| `docsearch.debug`     | Garde la fenêtre de recherche ouverte (pour le débogage).   | `false` |
-| `flexsearch`          | Options du thème composant FlexSearch.                      |         |
+Les options de recherche sont fournies par les thèmes composants [DocSearch](https://github.com/Cecilapp/theme-docsearch) et [FlexSearch](https://github.com/Cecilapp/theme-flexsearch), qui doivent être installés et ajoutés à la section `theme`. Consultez [Recherche sur le site](page:fr/docs/guides/search).
+
+| Option                 | Description                                                  | Défaut  |
+|------------------------|--------------------------------------------------------------|---------|
+| `docsearch.enabled`    | Affiche le champ de recherche DocSearch.                     | `true`  |
+| `docsearch.appId`      | Identifiant de l’application Algolia.                        |         |
+| `docsearch.indexName`  | Nom de l’index Algolia.                                      |         |
+| `docsearch.apiKey`     | Clé d’API Algolia de recherche uniquement.                   |         |
+| `docsearch.language`   | Filtre les résultats sur la langue courante.                 | `true`  |
+| `docsearch.insights`   | Active Algolia Insights.                                     | `false` |
+| `docsearch.debug`      | Garde la fenêtre de recherche ouverte (pour le débogage).    | `false` |
+| `flexsearch.enabled`   | Affiche le champ de recherche FlexSearch.                    | `true`  |
+| `flexsearch.sections`  | Sections indexées, dans l’ordre des groupes de résultats.    | toutes  |
 
 ## Exemple
 
@@ -82,5 +86,6 @@ docsearch:
   apiKey: <YOUR_SEARCH_API_KEY>
 theme:
   - docs
+  - docsearch
   - pwa
 ```

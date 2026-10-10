@@ -22,7 +22,7 @@ Use a number prefix in the file name of a page (e.g. `1-intro.md`), or the `weig
 
 ## How to enable search?
 
-Set `docsearch.enabled` to `true` and provide your Algolia credentials, or install the FlexSearch component theme for a local search. See [Site Search](page:docs/guides/search).
+Install the DocSearch component theme (`composer require cecil/theme-docsearch`) and provide your Algolia credentials, or install the FlexSearch component theme (`composer require cecil/theme-flexsearch`) for a local search, then add it to the `theme` section. See [Site Search](page:docs/guides/search).
 
 ## How to disable the second language?
 

@@ -22,7 +22,7 @@ Utilisez un préfixe numérique dans le nom du fichier d’une page (par exemple
 
 ## Comment activer la recherche ?
 
-Définissez `docsearch.enabled` à `true` et renseignez vos identifiants Algolia, ou installez le thème composant FlexSearch pour une recherche locale. Consultez [Recherche sur le site](page:fr/docs/guides/search).
+Installez le thème composant DocSearch (`composer require cecil/theme-docsearch`) et renseignez vos identifiants Algolia, ou installez le thème composant FlexSearch (`composer require cecil/theme-flexsearch`) pour une recherche locale, puis ajoutez-le à la section `theme`. Consultez [Recherche sur le site](page:fr/docs/guides/search).
 
 ## Comment désactiver la seconde langue ?
 
