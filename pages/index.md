@@ -1,4 +1,5 @@
 ---
+description: Write your pages in Markdown, customize templates with Twig and Tailwind CSS, and enjoy the power of Cecil static site generator.
 blocks:
   - name: hero
     description: >

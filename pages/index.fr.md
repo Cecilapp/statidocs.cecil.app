@@ -1,4 +1,5 @@
 ---
+description: Rédigez vos pages en Markdown, personnalisez des templates avec Twig et Tailwind CSS, et profitez de la puissance du générateur de site statique Cecil.
 blocks:
   - name: hero
     description: |
