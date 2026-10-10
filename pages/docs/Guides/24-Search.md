@@ -1,24 +1,33 @@
 ---
-title: Recherche sur le site
-description: Statidocs prend en charge Algolia DocSearch.
+title: Site Search
+description: Statidocs has support for Algolia DocSearch and FlexSearch.
 ---
-# Recherche sur le site
+# Site Search
 
-Statidocs prend en charge [Algolia DocSearch](https://docsearch.algolia.com).
+Statidocs offers two search solutions, displayed as a search button in the header:
 
-Le service est gratuit pour tout projet open source : [inscrivez-vous au programme DocSearch](https://docsearch.algolia.com/apply/).
-
-DocSearch explore votre site une fois par semaine et regroupe son contenu dans un index Algolia. Ce contenu est ensuite interrogé directement depuis votre interface avec l’API Algolia.
+- [Algolia DocSearch](#algolia-docsearch): a hosted search service, free for open-source projects;
+- [FlexSearch](#flexsearch): a local search index, generated with your site, without any external service.
 
 :::info
-Si votre site n’est [pas éligible](https://docsearch.algolia.com/docs/who-can-apply/) à l’offre gratuite ou s’il se trouve derrière un pare-feu, vous pouvez [exécuter votre propre](https://docsearch.algolia.com/docs/run-your-own/) explorateur DocSearch.
+DocSearch takes precedence if both are enabled.
 :::
 
-## Configuration de l’explorateur
+## Algolia DocSearch
 
-La modification et la gestion de vos explorations s’effectuent via [l’interface web](https://crawler.algolia.com). Les index sont immédiatement disponibles après le déploiement ; une configuration manuelle n’est donc généralement pas nécessaire.
+The service is free for any open-source project: [apply to the DocSearch program](https://docsearch.algolia.com/apply/).
 
-Configuration recommandée :
+DocSearch crawls your website once a week and aggregates the content in an Algolia index. This content is then queried directly from your front-end using the Algolia API.
+
+:::info
+If your website is [not eligible](https://docsearch.algolia.com/docs/who-can-apply/) for the free or if your website sits behind a firewall, then you can [run your own](https://docsearch.algolia.com/docs/run-your-own/) DocSearch crawler.
+:::
+
+### Crawler configuration
+
+Editing and managing your crawls can be done via [the web interface](https://crawler.algolia.com). Indices are readily available after deployment, so manual configuration usually isn't necessary.
+
+Recommended configuration:
 
 ```json
 new Crawler({
@@ -114,7 +123,7 @@ new Crawler({
 });
 ```
 
-## Configuration de DocSearch
+### DocSearch configuration
 
 ```yaml
 docsearch:
@@ -125,3 +134,32 @@ docsearch:
   insights: true|false
   debug: false|true
 ```
+
+## FlexSearch
+
+As an alternative to DocSearch (no external service, no crawler), install the [FlexSearch component theme](https://github.com/Cecilapp/theme-flexsearch):
+
+```bash
+composer require cecil/theme-flexsearch
+```
+
+Then add it after `docs` in the `theme` section of the configuration:
+
+```yaml
+theme:
+  - docs
+  - flexsearch
+```
+
+The search index is generated at build time, and results can be grouped by section:
+
+```yaml
+flexsearch:
+  sections:
+    docs:
+      limit: 5
+```
+
+:::tip
+Don’t forget to disable DocSearch (`docsearch.enabled: false`) to use FlexSearch.
+:::

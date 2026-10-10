@@ -1,81 +1,103 @@
 ---
 title: Mise en route
-description: Apprenez à créer votre site de documentation avec Statidocs, propulsé par Cecil.
+description: Découvrez comment commencer à créer votre site de documentation avec Statidocs, propulsé par Cecil.
 ---
 # Mise en route
 
-Statidocs est un puissant démarreur de documentation, construit par le générateur de sites statiques [Cecil](https://cecil.app).
+Statidocs est un starter de documentation, construit avec le générateur de site statique [Cecil](https://cecil.app) et son [thème _Docs_](https://github.com/Cecilapp/theme-docs).
 
 :::important
-PHP 8.3+ est nécessaire.
+PHP 8.3+ est requis.
 :::
 
 ## Créer un nouveau projet
 
-Le moyen le plus simple de créer un nouveau projet Statidocs consiste à utiliser [Composer](https://getcomposer.org) :
+La façon la plus simple de créer un nouveau projet Statidocs est d’utiliser [Composer](https://getcomposer.org) :
 
 ```bash
 composer create-project cecil/statidocs --ask
 ```
 
 :::info
-Cette commande télécharge également le binaire `cecil.phar`.
+Cette commande télécharge également le binaire `cecil.phar` dans le répertoire de votre projet.
 :::
 
 ## Démarrer le serveur local
 
-Quand vous travaillez localement, le [serveur intégré à Cecil](https://cecil.app/documentation/commands/#serve) vous permet de prévisualiser votre travail et il rafraichit automatiquement votre navigateur lorsque vous effectuez une modification.
+En local, le [serveur intégré de Cecil](https://cecil.app/documentation/commands/#serve) vous permet de prévisualiser votre travail et rafraîchit automatiquement votre navigateur lorsque vous faites des modifications.
 
-Au sein de votre projet, lancez la commande suivante pour démarrer le serveur local :
+Dans le répertoire de votre projet, lancez la commande suivante pour démarrer le serveur local :
 
 ```bash
 php cecil.phar serve
 ```
 
-Cela va afficher un message dans votre terminal avec l’URL de votre aperçu local. Ouvrez cette URL (<http://localhost:8000> par défaut) pour commencer à parcourir votre documentation.
+Un message indiquant l’URL de la prévisualisation locale s’affiche dans votre terminal. Ouvrez cette URL (<http://localhost:8000> par défaut) pour parcourir votre documentation.
 
-## Ajouter des articles
+## Ajouter des pages
 
-### Formats de fichier
+### Formats de fichiers
 
-Statidocs supporte la rédaction de contenu au format Markdown sans paramétrage particulier. Vous pouvez étendre les capacités en activant les [options Markdown de Cecil](https://cecil.app/documentation/content/#markdown).
+Statidocs prend en charge la rédaction de contenu en Markdown sans aucune configuration. Vous pouvez étendre les capacités par défaut en activant les [options Markdown de Cecil](https://cecil.app/documentation/content/#markdown).
 
-### Ajouter des pages
+### Organiser les pages
 
-Ajoutez de nouvelles pages à votre site en créant des fichiers `.md` dans `pages/docs/`. Utilisez un niveau de sous-dossiers pour organiser vos fichiers et un préfixe numérique pour les trier.
+Ajoutez de nouvelles pages à votre site en créant des fichiers `.md` dans `pages/docs/`. Utilisez des sous-répertoires pour regrouper les pages : chaque sous-répertoire contenant un fichier `index.md` devient un groupe repliable dans la barre latérale, quelle que soit sa profondeur.
 
-Par exemple, la structure de fichiers suivante va générer les pages au niveau de `domain.tld/docs/mise-en-route` et de `domain.tld/docs/guides/i18n` :
+Par exemple, la structure de fichiers suivante génère les pages `/docs/getting-started/`, `/docs/guides/i18n/` et `/docs/guides/advanced/customization/` :
 
 ```text
-<monsite>
+<my-project>
 └─ pages
    └─ docs
-      ├─ guides
-      |  └─ 2-i18n.md
-      └─ 1-Mise en route.md
+      ├─ 1-Getting started.md
+      └─ guides
+         ├─ index.md
+         ├─ 2-i18n.md
+         └─ advanced
+            ├─ index.md
+            └─ 1-customization.md
 ```
+
+Les pages sont triées par `weight` (poids) : utilisez un préfixe numérique dans le nom du fichier (par exemple `1-`) ou la variable de front matter `weight`.
+
+:::tip
+Pour en savoir plus sur la barre latérale, consultez le [guide Navigation](page:fr/docs/guides/navigation).
+:::
 
 ### Front matter
 
-Toutes les pages utilisent les variables du front matter afin de contrôler la manière dont elles apparaissent :
+Toutes les pages utilisent des variables de front matter pour contrôler leur affichage :
 
 ```yaml
 ---
-title: Salut le monde
-description: Ceci est une description de page.
+title: Hello world
+description: This is a page description.
 ---
 ```
 
-Pour en savoir plus, consultez la [documentation de Cecil concernant le front matter](https://cecil.app/documentation/content/#front-matter).
+Consultez la [référence du front matter](page:fr/docs/reference/front-matter) pour la liste complète des variables.
 
-## Mise à jour de Statidocs
+## Générer et déployer
 
-:::tip
-Statidocs est encore en développement, il y aura des mises à jour et des améliorations fréquentes. Assurez-vous de mettre à jour Statidocs régulièrement
-:::
+Lorsque vous êtes prêt à publier, générez le site statique dans le répertoire `_site/` :
 
-Statidocs est construit sur le thème Cecil [_docs_](https://github.com/Cecilapp/theme-docs). Vous pouvez le mettre à jour ainsi que d'autres thèmes Cecil en exécutant la commande suivante dans votre terminal :
+```bash
+php cecil.phar build
+```
+
+Envoyez ensuite le contenu de `_site/` sur n’importe quel hébergeur de sites statiques (Netlify, Vercel, GitHub Pages, etc.). Consultez la [documentation de déploiement de Cecil](https://cecil.app/documentation/deploy/) pour plus de détails.
+
+## Mettre à jour Statidocs
+
+Statidocs est construit sur le thème Cecil _[Docs](https://github.com/Cecilapp/theme-docs)_. Vous pouvez le mettre à jour, ainsi que les autres thèmes Cecil, en lançant la commande suivante dans votre terminal :
 
 ```bash
 composer update
+```
+
+Mettez à jour Cecil lui-même avec sa commande `self-update` :
+
+```bash
+php cecil.phar self-update
 ```

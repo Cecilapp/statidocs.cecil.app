@@ -1,6 +1,6 @@
 ---
 title: Authoring content
-description: How to wite your content page helped by Markdown.
+description: How to write your content pages with Markdown.
 ---
 # Authoring content in Markdown
 
@@ -177,39 +177,57 @@ Second Term
 
 ## Notes
 
-:::
-empty
-:::
+Notes (callouts) highlight information, with the `info`, `tip`, `important`, `warning` and `caution` types.
 
 :::info
-info
+**Info:** useful information that users should know.
 :::
 
 :::tip
-tip
+**Tip:** helpful advice for doing things better, with [a link](https://cecil.app).
 :::
 
 :::important
-important
+**Important:** key information users need to know.
 :::
 
 :::warning
-warning
+**Warning:** urgent info that needs immediate user attention.
 :::
 
 :::caution
-caution
+**Caution:** advises about risks or negative outcomes.
 :::
 
 ```markdown
-:::info|tip|important|warning|caution
-Note here.
+:::tip
+**Tip:** helpful advice for doing things better.
 :::
 ```
 
 ## Diagrams and charts
 
 Diagramming and charting with [Mermaid](https://mermaid.js.org).
+
+### Flowchart
+
+```mermaid
+flowchart LR
+  A[Markdown] --> B(Cecil)
+  B --> C{Theme}
+  C -->|light| D[HTML]
+  C -->|dark| D
+```
+
+<pre>
+```mermaid
+flowchart LR
+  A[Markdown] --> B(Cecil)
+  B --> C{Theme}
+  C -->|light| D[HTML]
+  C -->|dark| D
+```
+</pre>
 
 ### Sequence diagram
 

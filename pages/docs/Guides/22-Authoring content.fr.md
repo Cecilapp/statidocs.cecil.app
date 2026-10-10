@@ -177,39 +177,57 @@ Second Term
 
 ## Notes
 
-:::
-vide
-:::
+Les notes (encadrés) mettent en valeur une information, avec les types `info`, `tip`, `important`, `warning` et `caution`.
 
 :::info
-information
+**Info :** une information utile que les utilisateurs doivent connaître.
 :::
 
 :::tip
-astuce
+**Astuce :** un conseil pour mieux faire les choses, avec [un lien](https://cecil.app).
 :::
 
 :::important
-important
+**Important :** une information clé dont les utilisateurs ont besoin.
 :::
 
 :::warning
-avertissement
+**Avertissement :** une information urgente qui requiert l’attention immédiate de l’utilisateur.
 :::
 
 :::caution
-attention
+**Attention :** met en garde contre des risques ou des conséquences négatives.
 :::
 
 ```markdown
-:::info|tip|important|warning|caution
-Note here.
+:::tip
+**Tip:** helpful advice for doing things better.
 :::
 ```
 
 ## Diagrammes et graphiques
 
 Créez des diagrammes et des graphiques avec [Mermaid](https://mermaid.js.org).
+
+### Organigramme
+
+```mermaid
+flowchart LR
+  A[Markdown] --> B(Cecil)
+  B --> C{Theme}
+  C -->|light| D[HTML]
+  C -->|dark| D
+```
+
+<pre>
+```mermaid
+flowchart LR
+  A[Markdown] --> B(Cecil)
+  B --> C{Theme}
+  C -->|light| D[HTML]
+  C -->|dark| D
+```
+</pre>
 
 ### Diagramme de séquence
 

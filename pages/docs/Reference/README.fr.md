@@ -1,8 +1,10 @@
 ---
 title: Référence
-description: Page de référence.
+description: Options de configuration et variables de front matter de Statidocs.
 weight: 30
 ---
+Documentation de référence des options de configuration et des variables de front matter prises en charge par Statidocs.
+
 :::info
-[Consultez la documentation de Cecil](https://cecil.app/documentation/configuration/)
+Statidocs est construit avec Cecil : consultez également la [documentation de Cecil](https://cecil.app/documentation/).
 :::
