@@ -57,13 +57,14 @@ theme:
   - pwa
 metatags:
   jsonld: true
-manifest:
-  background_color: '#1C4ED8'
-  theme_color: '#1C4ED8'
-  shortcuts: true
-serviceworker:
-  enabled: true
-  update:
-    snackbar: true
-  offline:
-    snackbar: true
+pwa:
+  manifest:
+    background_color: '#1C4ED8'
+    theme_color: '#1C4ED8'
+    shortcuts: true
+  serviceworker:
+    enabled: true
+    update:
+      snackbar: true
+    offline:
+      snackbar: true
