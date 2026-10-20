@@ -102,11 +102,12 @@ Le thème de couleur suit la préférence du système, avec un sélecteur manuel
 Statidocs inclut le [thème PWA](https://github.com/Cecilapp/theme-pwa) : un manifeste web et un service worker, pour rendre votre documentation installable et disponible hors ligne.
 
 ```yaml
-manifest:
-  background_color: '#1C4ED8'
-  theme_color: '#1C4ED8'
-serviceworker:
-  enabled: true
+pwa:
+  manifest:
+    background_color: '#1C4ED8'
+    theme_color: '#1C4ED8'
+  serviceworker:
+    enabled: true
 ```
 
 ## Surcharger les templates
