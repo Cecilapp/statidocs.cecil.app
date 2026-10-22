@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ca0376986beca2a95b03d6da69113792",
+    "content-hash": "0a0f4b1f215baa8cd1e35c9456d503ce",
     "packages": [
         {
             "name": "cecil/theme-docs",
@@ -65,16 +65,16 @@
         },
         {
             "name": "cecil/theme-docsearch",
-            "version": "1.0.0",
+            "version": "3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Cecilapp/theme-docsearch.git",
-                "reference": "c2ae2d78116a13832f193160774287ade12d46b8"
+                "reference": "54bc07f76dcc455d999a4859febce47e1efb3cdc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Cecilapp/theme-docsearch/zipball/c2ae2d78116a13832f193160774287ade12d46b8",
-                "reference": "c2ae2d78116a13832f193160774287ade12d46b8",
+                "url": "https://api.github.com/repos/Cecilapp/theme-docsearch/zipball/54bc07f76dcc455d999a4859febce47e1efb3cdc",
+                "reference": "54bc07f76dcc455d999a4859febce47e1efb3cdc",
                 "shasum": ""
             },
             "require": {
@@ -84,7 +84,7 @@
             "extra": {
                 "name": "docsearch",
                 "branch-alias": {
-                    "dev-main": "1.x-dev"
+                    "dev-main": "3.x-dev"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -101,7 +101,7 @@
             ],
             "support": {
                 "issues": "https://github.com/Cecilapp/theme-docsearch/issues",
-                "source": "https://github.com/Cecilapp/theme-docsearch/tree/1.0.0"
+                "source": "https://github.com/Cecilapp/theme-docsearch/tree/3.0.0"
             },
             "funding": [
                 {
@@ -113,7 +113,58 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2026-10-10T12:00:45+00:00"
+            "time": "2026-10-21T15:26:03+00:00"
+        },
+        {
+            "name": "cecil/theme-flexsearch",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Cecilapp/theme-flexsearch.git",
+                "reference": "2fe9e4c6e3baa970c72af99bbeb009676979dab2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Cecilapp/theme-flexsearch/zipball/2fe9e4c6e3baa970c72af99bbeb009676979dab2",
+                "reference": "2fe9e4c6e3baa970c72af99bbeb009676979dab2",
+                "shasum": ""
+            },
+            "require": {
+                "cecil/theme-installer": "^1.4||^2.0"
+            },
+            "type": "cecil-theme",
+            "extra": {
+                "name": "flexsearch",
+                "branch-alias": {
+                    "dev-main": "1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Cecil component theme FlexSearch",
+            "keywords": [
+                "FlexSearch",
+                "cecil",
+                "search",
+                "theme"
+            ],
+            "support": {
+                "issues": "https://github.com/Cecilapp/theme-flexsearch/issues",
+                "source": "https://github.com/Cecilapp/theme-flexsearch/tree/1.2.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/ArnaudLigny",
+                    "type": "github"
+                },
+                {
+                    "url": "https://opencollective.com/cecil",
+                    "type": "open_collective"
+                }
+            ],
+            "time": "2026-10-20T02:18:56+00:00"
         },
         {
             "name": "cecil/theme-installer",

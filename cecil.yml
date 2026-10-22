@@ -33,17 +33,27 @@ menus:
       weight: 0
 logo: logo.png
 footer: Copyright © %author%
+
 github:
   url: https://github.com/Cecilapp/statidocs
   repo: https://github.com/Cecilapp/statidocs.cecil.app
   branch: main
-docsearch:
+
+#versions: # documentation versions, displayed in a selector of the header
+#  - name: '1.x'
+#    url: https://statidocs.cecil.app/
+#version: '1.x' # name of the current version (default: the first one)
+
+#docsearch:
+#  enabled: true
+#  # statidocs.cecil.app credentials
+#  appId: F5QE72IRAL
+#  indexName: staticecil
+#  apiKey: b165b7766201deabe0be660ca0bdab94
+#  insights: true
+
+flexsearch:
   enabled: true
-  # statidocs.cecil.app credentials
-  appId: F5QE72IRAL
-  indexName: staticecil
-  apiKey: b165b7766201deabe0be660ca0bdab94
-  insights: true
 
 # Cecil config for Statidocs
 output:
@@ -51,12 +61,16 @@ output:
     homepage: ['html', 'atom', 'markdown', 'llms']
     section: ['html', 'atom', 'markdown']
     page: ['html', 'markdown']
+
 theme:
   - docs
-  - docsearch
+  #- docsearch
+  - flexsearch
   - pwa
+
 metatags:
   jsonld: true
+
 pwa:
   manifest:
     background_color: '#1C4ED8'

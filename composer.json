@@ -14,7 +14,8 @@
   "require": {
     "cecil/theme-docs": "^6.0",
     "cecil/theme-pwa": "^3.0",
-    "cecil/theme-docsearch": "^1.0"
+    "cecil/theme-docsearch": "^3.0",
+    "cecil/theme-flexsearch": "^1.2"
   },
   "scripts": {
     "post-create-project-cmd": [
