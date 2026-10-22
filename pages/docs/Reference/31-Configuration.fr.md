@@ -32,6 +32,13 @@ La configuration de votre site est définie dans le fichier `cecil.yml`. Statido
 | `lastupdated`     | Affiche la date de la page comme date de « Mise à jour » (`updated` est toujours affiché).   | `false` |
 | `language_cookie` | Nom d’un cookie enregistrant la langue choisie avec le sélecteur (par exemple `nf_lang`).    | `false` |
 
+## Versions
+
+| Option     | Description                                                                               | Défaut               |
+|------------|-------------------------------------------------------------------------------------------|----------------------|
+| `versions` | Versions de la documentation (`name`, `url`), affichées dans un sélecteur de l’en-tête.   |                      |
+| `version`  | Nom de la version courante.                                                               | la première version  |
+
 ## GitHub
 
 | Option          | Description                                                | Défaut  |

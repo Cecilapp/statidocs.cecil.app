@@ -32,6 +32,13 @@ The configuration of your site is defined in the `cecil.yml` file. Statidocs sup
 | `lastupdated`     | Display the page date as “Last updated” date (`updated` is always displayed).       | `false` |
 | `language_cookie` | Name of a cookie storing the language chosen with the selector (e.g. `nf_lang`).    | `false` |
 
+## Versions
+
+| Option     | Description                                                                          | Default            |
+|------------|--------------------------------------------------------------------------------------|--------------------|
+| `versions` | Documentation versions (`name`, `url`), displayed in a selector of the header.       |                    |
+| `version`  | Name of the current version.                                                         | the first version  |
+
 ## GitHub
 
 | Option          | Description                                         | Default |
