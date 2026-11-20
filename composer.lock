@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "cecil/theme-docs",
-            "version": "6.0.0",
+            "version": "6.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Cecilapp/theme-docs.git",
-                "reference": "526b1ae379c3f5eb2a201df8413891b23e095163"
+                "reference": "375d7700ba20f11c73fbb40dac3231fd7622eaad"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Cecilapp/theme-docs/zipball/526b1ae379c3f5eb2a201df8413891b23e095163",
-                "reference": "526b1ae379c3f5eb2a201df8413891b23e095163",
+                "url": "https://api.github.com/repos/Cecilapp/theme-docs/zipball/375d7700ba20f11c73fbb40dac3231fd7622eaad",
+                "reference": "375d7700ba20f11c73fbb40dac3231fd7622eaad",
                 "shasum": ""
             },
             "require": {
@@ -49,7 +49,7 @@
             ],
             "support": {
                 "issues": "https://github.com/Cecilapp/theme-docs/issues",
-                "source": "https://github.com/Cecilapp/theme-docs/tree/6.0.0"
+                "source": "https://github.com/Cecilapp/theme-docs/tree/6.0.1"
             },
             "funding": [
                 {
@@ -61,7 +61,8 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2026-10-20T22:13:20+00:00"
+            "time": "2026-11-09T09:35:44+00:00",
+            "published-time": "2026-11-09T09:37:25+00:00"
         },
         {
             "name": "cecil/theme-docsearch",
@@ -113,7 +114,8 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2026-10-21T15:26:03+00:00"
+            "time": "2026-10-21T15:26:03+00:00",
+            "published-time": "2026-10-21T15:27:48+00:00"
         },
         {
             "name": "cecil/theme-flexsearch",
@@ -164,27 +166,30 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2026-10-20T02:18:56+00:00"
+            "time": "2026-10-20T02:18:56+00:00",
+            "published-time": "2026-10-20T02:19:06+00:00"
         },
         {
             "name": "cecil/theme-installer",
-            "version": "2.0.0",
+            "version": "2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Cecilapp/theme-installer.git",
-                "reference": "588ec8523a978229d23e10a0b8e0b6420192c154"
+                "reference": "37c6f58e09cf36e94b10b078a9c5e1f3985d5a38"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Cecilapp/theme-installer/zipball/588ec8523a978229d23e10a0b8e0b6420192c154",
-                "reference": "588ec8523a978229d23e10a0b8e0b6420192c154",
+                "url": "https://api.github.com/repos/Cecilapp/theme-installer/zipball/37c6f58e09cf36e94b10b078a9c5e1f3985d5a38",
+                "reference": "37c6f58e09cf36e94b10b078a9c5e1f3985d5a38",
                 "shasum": ""
             },
             "require": {
-                "composer-plugin-api": ">=2.0"
+                "composer-plugin-api": "^2.0",
+                "php": "^8.1"
             },
             "require-dev": {
-                "composer/composer": ">=2.0"
+                "composer/composer": "^2.0",
+                "phpunit/phpunit": "^10.5"
             },
             "type": "composer-plugin",
             "extra": {
@@ -194,8 +199,8 @@
                 }
             },
             "autoload": {
-                "psr-0": {
-                    "Cecil\\Installer\\Composer": "src/"
+                "psr-4": {
+                    "Cecil\\Installer\\Composer\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -210,15 +215,17 @@
                     "role": "Developer"
                 }
             ],
-            "description": "Installer for Cecil's themes",
+            "description": "Composer installer for Cecil's themes",
+            "homepage": "https://cecil.app",
             "keywords": [
                 "cecil",
+                "composer-plugin",
                 "installer",
                 "themes"
             ],
             "support": {
                 "issues": "https://github.com/Cecilapp/theme-installer/issues",
-                "source": "https://github.com/Cecilapp/theme-installer/tree/2.0.0"
+                "source": "https://github.com/Cecilapp/theme-installer/tree/2.1.0"
             },
             "funding": [
                 {
@@ -230,20 +237,21 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2024-01-09T14:53:24+00:00"
+            "time": "2026-10-22T20:56:35+00:00",
+            "published-time": "2026-10-22T20:57:20+00:00"
         },
         {
             "name": "cecil/theme-pwa",
-            "version": "3.0.3",
+            "version": "3.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Cecilapp/theme-pwa.git",
-                "reference": "f7e957eb39a56eac47f7588b145d20fa0c5c50a6"
+                "reference": "28afd0ed30331c00edc939bbf7c4c60b6840c1e3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Cecilapp/theme-pwa/zipball/f7e957eb39a56eac47f7588b145d20fa0c5c50a6",
-                "reference": "f7e957eb39a56eac47f7588b145d20fa0c5c50a6",
+                "url": "https://api.github.com/repos/Cecilapp/theme-pwa/zipball/28afd0ed30331c00edc939bbf7c4c60b6840c1e3",
+                "reference": "28afd0ed30331c00edc939bbf7c4c60b6840c1e3",
                 "shasum": ""
             },
             "require": {
@@ -268,7 +276,7 @@
                 "theme"
             ],
             "support": {
-                "source": "https://github.com/Cecilapp/theme-pwa/tree/3.0.3"
+                "source": "https://github.com/Cecilapp/theme-pwa/tree/3.0.4"
             },
             "funding": [
                 {
@@ -280,7 +288,8 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2026-10-19T21:46:00+00:00"
+            "time": "2026-11-17T15:04:47+00:00",
+            "published-time": "2026-11-17T15:06:25+00:00"
         }
     ],
     "packages-dev": [],
@@ -291,5 +300,5 @@
     "prefer-lowest": false,
     "platform": {},
     "platform-dev": {},
-    "plugin-api-version": "2.9.0"
+    "plugin-api-version": "2.11.0"
 }
