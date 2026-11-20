@@ -3,3 +3,4 @@ _site/
 .cecil/
 node_modules/
 vendor/
+.vscode/
